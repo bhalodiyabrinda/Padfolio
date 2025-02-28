@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>assignment-3</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        <style>
+            body{
+                background-image: url(img/1..jpeg);
+                background-repeat: no-repeat;
+                background-size:100% 100% ;    
+            }
+            .coll{
+                width: 800px;
+                height: 600px;
+                background-color: rgb(221, 229, 244);
+                margin-left: 350px;
+                margin-top: 50px;
+            }
+            .a1{
+                text-align: center;
+                font-size: 60px;
+                position: absolute;
+                background-color: rgb(13, 39, 105);
+                color: white;
+                width: 800px;
+            }
+            .a2{
+                position: absolute;
+                top: 145px;
+                margin-left: 55px;
+                font-size: 30px;
+                width: 45%;
+            }
+            input[type=submit]{
+                width: 690px;
+                margin-top: 10px;
+                background-color: rgb(56, 113, 248);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="coll">
+            <div class="a1">Registretion  Form</div>
+            <div class="a2">
+            <form class="row g-3">
+                <div class="col">
+                    <label for="Name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputNamel4">
+                </div>
+                <div class="col-md-6">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" >
+                </div>
+                <div class="col-12">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="phonenumber" class="form-control" >
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <select id="inputState" class="form-select">
+                        <option>Rajkot</option>
+                        <option>Ahemdabad</option>
+                        <option>Jamnagar</option>
+                        <option>Surat</option>
+                        <option>Baroda</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputcountry" class="form-label">Country</label>
+                    <select id="inputState" class="form-select">
+                        <option>India</option>
+                        <option>Germany</option>
+                        <option>Canada</option>
+                        <option>France</option>
+                        <option>USA</option>
+                    </select>
+                </div>
+                <div class="div">
+                    <input type="submit" value="Get Started">
+                </div>
+          </form>
+        </div>
+    </body>
+</html>

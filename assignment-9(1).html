@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>4.HTML</title>
+        <style>
+            .a{
+                background-color: rgb(116, 120, 118);
+                width: 500px;
+                height: 500px;
+            }
+            input{
+                background-color: rgb(127, 212, 255);
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+                font-size: 40px;
+                border-radius: 25px;
+            }
+            .button:hover {
+                background-color: #ecb4ec;
+                transition: 0.5s ease-in-out;
+            }
+        </style>
+    </head>
+    <body style="margin-top:100px; margin-left:550px;">
+        <div class="a">
+        <form id="form" name="form">
+            <input type="text" id="calc" name="calc" style="width: 440px; margin-left:30px; margin-top:30px;">
+            <br>
+            <table>
+                <tr>
+                    <th><input class="button" style="margin-left: 20px;" type="button" value="7" onclick="form.calc.value+=7"></th>
+                    <th><input class="button" type="button" value="8" onclick="form.calc.value+=8"></th>
+                    <th><input class="button" type="button" value="9" onclick="form.calc.value+=9"></th>
+                    <th><input class="button" type="button" value="/" onclick="form.calc.value+='/'"></th>
+                    <th><input class="button" type="button" value="ac" onclick="form.calc.value= ' '" id="clear"></th>
+
+                </tr>
+                <tr>
+                    <th><input class="button" style="margin-left: 20px;" type="button" value="4" onclick="form.calc.value+=4"></th>
+                    <th><input class="button" type="button" value="5" onclick="form.calc.value+=5"></th>
+                    <th><input class="button" type="button" value="6" onclick="form.calc.value+=6"></th>
+                    <th><input class="button" type="button" value="-" onclick="form.calc.value+='-'"></th>
+                    <th><input class="button" type="button" value="*" onclick="form.calc.value+='*'"></th>
+                </tr>
+                <tr>
+                    <th><input class="button" style="margin-left: 20px;" type="button" value="1" onclick="form.calc.value+=1"></th>
+                    <th><input class="button" type="button" value="2" onclick="form.calc.value+=2"></th>
+                    <th><input class="button" type="button" value="3" onclick="form.calc.value+=3"></th>
+                    <th rowspan="2"><input style="height: 165px;" class="button" type="button" value="+" onclick="form.calc.value+='+'"></th>
+                    <th><input class="button" type="button" value="%" onclick="form.calc.value+='%'"></th>
+                </tr>
+                <tr>
+                    <th><input class="button" style="margin-left: 20px;" type="button" value="0" onclick="form.calc.value+='0'"></th>
+                    <th><input class="button" style="margin-left: 22px;" type="button" value="00" onclick="form.calc.value+='00'"></th>
+                    <th><input class="button" type="button" value="." onclick="form.calc.value+='.'"></th>
+                    <th><input class="button" type="button" value="=" onclick="form.calc.value= eval(form.calc.value)"></th>
+                </tr>
+            </table>
+        </form>
+    </div> 
+    </body>
+</html>
